@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(value = "CLOUD-PROVIDER-SERVICE")
 public interface ConsumerService {
 
-    @GetMapping("/feignMethod/{id}")
+    @GetMapping("/provider/feignMethod/{id}")
     public String feignMethod(@PathVariable("id") int id);
 }
